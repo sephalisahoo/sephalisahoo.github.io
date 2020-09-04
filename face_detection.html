@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sephali Sahoo</title>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab"
+        rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            /*border: solid 1px red;*/
+            color: black;
+            font-family: "Antic Slab";
+            font-size: 18px;
+        }
+
+        .main-container {
+            margin: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .name {
+            color: gray;
+            font-family: "Amatic SC";
+            font-size: 70px;
+            /*margin-bottom: 50px;*/
+        }
+
+        .contact>.icon-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        .icon-list {
+            color: black;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .icon-items {
+            padding: 5px;
+            list-style: none;
+            color: black;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .icon-items:hover {
+            /*opacity: 0.6;*/
+            background: black;
+            border-radius: 10%;
+            border: solid white;
+        }
+
+        .icon-items:hover>i {
+            color: white;
+        }
+
+        .content-container {
+            width: auto;
+            margin: auto;
+            background: linear-gradient(rgba(224, 224, 224, 0) 0%,
+                    rgb(224, 224, 224) 20%,
+                    rgb(224, 224, 224) 80%,
+                    rgba(224, 224, 224, 0) 100%);
+            padding: 100px;
+        }
+
+        .content-container>.title {
+            font-family: "Amatic SC";
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content-container>ul {
+            list-style-type: none;
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        @media screen and (min-width: 1100px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+            }
+
+            .main-container {
+                min-width: 900px;
+                margin-left: 10%;
+            }
+        }
+
+        @media screen and (max-width: 1120px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+                width: 100%;
+            }
+
+            .main-container {
+                margin: 20px 0px;
+                padding: 0px;
+                transition: none;
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    </style>
+</header>
+
+<body>
+    <div class="main-container">
+        <div class="header-container">
+            <div class="contact">
+                <ul id="contactme" class="icon-list">
+                    <a href="final.html" target="_self"
+                        rel="noopener noreferrer  nofollow">
+                        <li class="icon-items">
+                            <i class="fa fa-arrow-circle-left"
+                                aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="https://github.com/seph392" target="_blank"
+                        rel="noopener noreferrer  nofollow">
+                        <li class="icon-items">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/public-profile/in/sephalisahoo/"
+                        target="_blank" rel="noopener noreferrer  nofollow">
+                        <li class="icon-items">
+                            <i class="fa fa-linkedin" aria-hidden="true"> </i>
+                        </li>
+                    </a>
+                    <!--<a href="#gmail" rel="noopener noreferrer  nofollow">
+            <li class="icon-items"><i class="fa fa-envelope" aria-hidden="true"></i></li>
+            </a>-->
+                </ul>
+            </div>
+            <div class="name">Sephali Sahoo.</div>
+        </div>
+        <div class="content-container">
+            <div class="title">
+                Face Detection
+                <hr />
+            </div>
+            <ul>
+                <li>
+                    Python version: 3.6.8
+                </li>
+                <li>
+                    Dlib version: 19.8.1
+                </li>
+                <br>
+                <li>This project has two scripts:
+                    <ol>
+                        <li>to detect screen image with single face in the image
+                        </li>
+                        <li>to detect faces and eyes in the image</li>
+                    </ol>
+                </li>
+                <br>
+                <li>
+                    I have used opencv and haarcascade, to detect faces.
+                </li>
+                <li>
+                    The cascade file has a function called detectMultiScale, in
+                    which I used the two parameters- Scale
+                    factor and minNeighbours.
+                </li>
+                <li>
+                    On tweaking these, the efficiency of the cascade to detect
+                    faces can be adjusted.
+                </li>
+                <br>
+                <li>
+                    I worked with three cascades:-
+                    <ul>
+                        <li>face_cascade</li>
+                        <li>face_cascade2</li>
+                        <li>profileface_cascade</li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    I found the face_cascade2 the most accurate.
+                </li>
+                <li>
+                    The cascade are most sensitive in grayscale than in color
+                    scale.(image = "team4.png")
+                </li>
+                <li>
+                    The output is colored, but the image used for processing
+                    gray or colored.
+                </li>
+                <br>
+                <br>
+                <li>
+                    <b>with gray scale(roi_gray)</b>
+                </li>
+                <li>
+                    <br><img src=result/gray.PNG>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <b>with color scale(roi_color)</b>
+                </li>
+                <li>
+                    <br><img src=result/color.PNG>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <i><b>Link to Github: </b></i>
+                    <a href="https://github.com/seph392/Face_Detection"
+                        target="_blank" rel="noopener noreferrer  nofollow">
+                        <i>Face_Detection</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

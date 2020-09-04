@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sephali Sahoo</title>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab"
+        rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            /*border: solid 1px red;*/
+            color: black;
+            font-family: "Antic Slab";
+            font-size: 18px;
+        }
+
+        .main-container {
+            margin: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .name {
+            color: gray;
+            font-family: "Amatic SC";
+            font-size: 70px;
+            /*margin-bottom: 50px;*/
+        }
+
+        .contact>.icon-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        .icon-list {
+            color: black;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .icon-items {
+            padding: 5px;
+            list-style: none;
+            color: black;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .icon-items:hover {
+            /*opacity: 0.6;*/
+            background: black;
+            border-radius: 10%;
+            border: solid white;
+        }
+
+        .icon-items:hover>i {
+            color: white;
+        }
+
+        .content-container {
+            width: auto;
+            margin: auto;
+            background: linear-gradient(rgba(224, 224, 224, 0) 0%,
+                    rgb(224, 224, 224) 20%,
+                    rgb(224, 224, 224) 80%,
+                    rgba(224, 224, 224, 0) 100%);
+            padding: 100px;
+        }
+
+        .content-container>.title {
+            font-family: "Amatic SC";
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content-container>ul {
+            list-style-type: none;
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        @media screen and (min-width: 1100px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+            }
+
+            .main-container {
+                min-width: 900px;
+                margin-left: 10%;
+            }
+        }
+
+        @media screen and (max-width: 1120px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+                width: 100%;
+            }
+
+            .main-container {
+                margin: 20px 0px;
+                padding: 0px;
+                transition: none;
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    </style>
+</header>
+
+<body>
+    <div class="main-container">
+        <div class="header-container">
+            <div class="contact">
+                <ul id="contactme" class="icon-list">
+                    <a href="final.html" target="_self"
+                        rel="noopener noreferrer  nofollow">
+                        <li class="icon-items">
+                            <i class="fa fa-arrow-circle-left"
+                                aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="https://github.com/seph392" target="_blank"
+                        rel="noopener noreferrer  nofollow">
+                        <li class="icon-items">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/public-profile/in/sephalisahoo/"
+                        target="_blank" rel="noopener noreferrer  nofollow">
+                        <li class="icon-items">
+                            <i class="fa fa-linkedin" aria-hidden="true"> </i>
+                        </li>
+                    </a>
+                    <!--<a href="#gmail" rel="noopener noreferrer  nofollow">
+            <li class="icon-items"><i class="fa fa-envelope" aria-hidden="true"></i></li>
+            </a>-->
+                </ul>
+            </div>
+            <div class="name">Sephali Sahoo.</div>
+        </div>
+        <div class="content-container">
+            <div class="title">
+                Questionary
+                <hr />
+            </div>
+            <ul>
+                <li>Python version: 3.6.8</li>
+                <li>Dlib version: 19.8.1</li>
+                <br>
+                <li>
+                    This project has two parts:-
+                    <ol>
+                        <li>creating a database</li>
+                        <li>creating question with appropriate options, and a
+                            single correct answer</li>
+                        <li>populating the question, options into GUI, and
+                            providing messages on selection of an option.
+                        </li>
+                    </ol>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <b>Part 1</b>
+                </li>
+                <li>
+                    A list of player with details is required, with name of the
+                    players under the column 'Player'.
+                </li>
+                <li>
+                    The file format must be in .csv
+                </li>
+                <li>
+                    (Note: Downloading is done using bing_image_download.py)
+                </li>
+                <li>
+                    Using the list of names from the column 'Player'. Images of
+                    the players are downloaded.(Note: one
+                    can set the
+                    'Usage Rights' for the images to be downloaded.)
+                </li>
+                <br>
+                <li>
+                    There are two image repository that is created:
+                    <ol>
+                        <li>with only the faces of players, which is pickled
+                        </li>
+                        <li>with players(not specified for face images)</li>
+                    </ol>
+                </li>
+                <br>
+                <li>
+                    All the images in the <b> second repository </b> are
+                    screened for the presence of a single player
+                    and then
+                    screened to recognise the faces using the respective pickle
+                    file.
+                </li>
+                <br>
+                <br>
+                <li>
+                    <b>Part 2</b>
+                </li>
+                <li>
+                    Questions are generated using question.csv(.csv file format
+                    is mandatory). The question.csv has
+                    mandatory
+                    columns: <b>question, tag, not_flag</b>. Using the
+                    combination, questions are generated.
+                </li>
+                <li>
+                    Using <b> tag </b>, appropriate columns are populated, and
+                    corresponding image for each option is
+                    selected.(Note: Only one option is a correct answer.)
+                </li>
+                <br>
+                <br>
+                <li>
+                    <b>Part 3</b>
+                </li>
+                <li>
+                    Using tkinter, quesion and the corresponding options are
+                    populated on the screen. On selection of an
+                    option, a pop-up box with message appears.
+                </li>
+                <br>
+                <br>
+                <li>
+                    <b>Using 2019 Ipl data, for sample:-</b>
+                </li>
+                <li>
+                    <b>Questionary Screen with questions and options</b>
+                </li>
+                <li>
+                    <br><img src='result/questionscreen.jpg'>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <b>Message box on Selecting Wrong Option</b>
+                </li>
+                <li>
+                    <br><img src='result/popup.jpg'>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <i><b>Link to Github: </b></i>
+                    <a href="https://github.com/seph392/Questionary"
+                        target="_blank" rel="noopener noreferrer  nofollow">
+                        <i>Questionary</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
