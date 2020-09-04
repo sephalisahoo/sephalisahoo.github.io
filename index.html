@@ -1,0 +1,612 @@
+<!--
+    
+    3) font style
+    4) resume download    
+    8) coyright at footer
+
+    1) sidenv-items target location
+    2)media query for mobile and small screen size
+    6)security and ad free
+    7)github hosting
+    5) icon link
+    
+-->
+<!--
+    1) project with abstract and working and test case- product documentation
+    2) tableau data source update
+    *) setting linkedin to the site
+    *) setting for linked in job suggestions 
+    *) linkedin pages 
+    3)1)creat a github account -> host the page
+    3)2) create a github account -> put the programs -> add link to website
+    4) courses on coursera and check nptel
+    5) challenges on the board -> purpose for data science or mba or prof in either
+    6) work on art and cooking, whenevr possible
+
+-->
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sephali Sahoo</title>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            /*border: solid 1px red;*/
+            color: black;
+            font-family: 'Antic Slab';
+            font-size: 18px;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /*-----------------sidenav-container--------------------*/
+        .sidenav-container {
+            background: gray;
+            width: 30%;
+            height: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            margin-left: -25%;
+            text-align: center;
+            transition: 0.5s ease;
+        }
+
+        .nav-list {
+            margin-top: 30vh;
+        }
+
+        .nav-item {
+            display: flex;
+            background: gray;
+        }
+
+        .nav-item>#nav-link {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: whitesmoke;
+            padding: 1em;
+            flex: 1;
+            width: 12vw;
+            font-size: 18px;
+        }
+
+        /*.nav-item>#site-name {
+            padding: 40px;
+        }*/
+
+
+        .nav-item>#nav-link:hover {
+            background-color: white;
+            color: black;
+            transition: 0.05s ease;
+        }
+
+        .main-container {
+            /*background: goldenrod;*/
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin-left: 4vw;
+            transition: 0.5s ease;
+            padding: 5vw 15vw;
+            width: 95vw;
+            opacity: 1;
+        }
+
+        .sidenav-container:hover {
+            margin-left: 0vw;
+        }
+
+        .sidenav-container:hover+.main-container {
+            margin-left: 30vw;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        /*-----------------header-container--------------------*/
+        .header-container {
+            text-align: center;
+        }
+
+        .profile-image-wrapper {
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .profile-image-wrapper img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+
+        .profile-content-wrapper,
+        .profile-content-wrapper div {
+            padding: 20px;
+        }
+
+        .profile-content-wrapper name {
+            color: gray;
+            font-family: 'Amatic SC';
+            font-size: 70px;
+        }
+
+        /*-----------------body-container--------------------*/
+        .timeline-container {
+            padding: 10px 50px 50px 50px;
+        }
+
+        .timeline-container h1 {
+            text-align: center;
+        }
+
+        .timeline-content {
+            /*border-top: solid 6px blue;
+            min-width: 80%;
+            max-width: 80%;*/
+            width: auto;
+            margin: auto;
+            background: linear-gradient(rgba(224, 224, 224, 0) 0%, rgb(224, 224, 224) 5%, rgb(224, 224, 224) 95%, rgba(224, 224, 224, 0) 100%);
+
+        }
+
+        .timeline {
+            border-left: solid 6px #000000;
+            max-width: 70%;
+            margin: 0px 0px auto auto;
+            list-style: none;
+            text-align: left;
+            border-image:
+                linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%) 1 100%;
+        }
+
+        .timeline-items {
+            margin: 25px;
+            padding: 20px;
+            border-bottom: 2px dashed #b1b1b1;
+
+        }
+
+        .timeline-items:first-child {
+            padding-top: 70px;
+        }
+
+        .timeline-items:last-child {
+            border: none;
+            padding-bottom: 70px;
+        }
+
+        .timeline-items::before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            margin-left: -53px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #000000;
+            display: flex;
+        }
+
+        .timeline-items:hover::before {
+            /* border-color: #258CC7;*/
+            background: red;
+            box-shadow: 0 0 0 5px red;
+            transition: ease-in-out;
+        }
+
+        .time,
+        time {
+            position: absolute;
+            right: 65%;
+            width: 10%;
+            text-align: right;
+            background: transparent;
+            list-style: none;
+        }
+
+        .time li,
+        time {
+            color: #7a7a7a;
+        }
+
+        /*-----------------footer-container--------------------*/
+
+        .footer-container {
+            text-align: center;
+        }
+
+        .f-item a {
+            text-decoration: none;
+        }
+
+        .icon-list {
+            display: flex;
+            justify-content: center;
+            padding: 30px 30px 70px 30px;
+
+        }
+
+        .icon-items {
+            padding: 5px;
+            list-style: none;
+            color: black;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .icon-items:hover {
+            /*opacity: 0.6;*/
+            background: black;
+            border-radius: 10%;
+            border: solid white;
+        }
+
+        .icon-items:hover>i {
+            color: white;
+        }
+
+        .resume a {
+            color: black;
+        }
+
+        .resume a:active,
+        .resume a:hover {
+            background: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 770px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+            }
+
+            .main-container {
+                min-width: 770px;
+                margin-left: 10%;
+            }
+        }
+
+        /* @media screen and (max-width: 1024px) {
+            .sidenav-container {
+                width: 300px;
+                margin-left: -250px;
+            }
+        }*/
+
+        /*@media screen and (min-width:480px) and (max-width: 760px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+            }
+
+            .main-container {
+                width: 760px;
+                padding: 38px 114px;
+            }
+
+            
+        }*/
+
+        @media screen and (max-width: 770px) {
+            * {
+                font-size: 14px;
+            }
+
+            html,
+            body {
+                overflow-x: hidden;
+                width: 100%;
+            }
+
+            .sidenav-container,
+            .sidenav-container * {
+                display: none;
+            }
+
+            .main-container {
+                margin: 20px 0px;
+                padding: 0px;
+                transition: none;
+                opacity: 1;
+                width: 100%;
+            }
+
+            .profile-content-wrapper div {
+                padding: 0px;
+                padding-bottom: 30px;
+            }
+
+            .timeline-container,
+            .timeline-content {
+                margin: 0px;
+                padding: 0px;
+                width: auto;
+            }
+
+            .timeline-items:hover::before {
+                /* border-color: #258CC7;*/
+                background: white;
+                box-shadow: 0 0 0 5px black;
+                transition: none;
+            }
+
+            .time,
+            time {
+                position: absolute;
+                right: 75%;
+                width: 20%;
+                max-width: 22%;
+                text-align: right;
+                background: transparent;
+                list-style: none;
+            }
+
+            .time li,
+            time {
+                color: #7a7a7a;
+            }
+
+        }
+    </style>
+
+
+</header>
+
+<body>
+    <div class="sidenav-container">
+        <div class="nav-list">
+            <div class="nav-item">
+                <a href="#" id="site-name"> </a>
+            </div>
+            <div class="nav-item">
+                <a href="#aboutme" id="nav-link">About</a>
+            </div>
+            <div class="nav-item">
+                <a href="#projects" id="nav-link">Projects</a>
+            </div>
+            <div class="nav-item">
+                <a href="#work" id="nav-link">Work</a>
+            </div>
+            <div class="nav-item">
+                <a href="#study" id="nav-link">Education</a>
+            </div>
+            <div class="nav-item">
+                <a href="#resume" id="nav-link">Resume Download</a>
+            </div>
+            <div class="nav-item">
+                <a href="#contactme" id="nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="header-container">
+            <div id="aboutme" class='profile-image-wrapper'>
+                <img src="result/profile6.jpg"
+                    alt="profile image of Sephali Sahoo">
+            </div>
+            <div class='profile-content-wrapper'>
+                <div>
+                    Hi! This is Sephali.
+                    <br>
+                    <br>
+                    You have just found my little space on the internet.<br>
+                    You are most welcome here.<br>
+                    Here, I bring to your notice the highlights of my life till
+                    the present.<br>
+                    To begin with, I am a coder by profession and have worked
+                    with various languages like ABAP, Python, etc. My current
+                    favourite is Python. I have extended my skills to Machine
+                    Learning and made some projects. Please check out my work.
+                    (just a scroll away.)
+                </div>
+                <name>
+                    Sephali sahoo.
+                </name>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="timeline-container">
+                <div class="timeline-content">
+                    <ul class="timeline">
+
+                        <li id="projects" class="timeline-items">
+                            <time>March 2020</time>
+                            <a id="title" href="tableau_covid19.html"
+                                target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Tableau</h2>
+                            </a>
+                            <i>Covid-19 Dashboard</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <time>January 2020</time>
+                            <a id="title"
+                                href="handwritten_digit_recognizer.html"
+                                target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Handwritten Digit Recognizer</h2>
+                            </a>
+                            <i>Detecting Digits in Grid Boxes</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <time>October 2019</time>
+                            <a id="title" href="questionary.html" target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Questionary</h2>
+                            </a>
+                            <i>GUI application for Quiz</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <time>September 2019</time>
+                            <a id="title" href="face_detection.html"
+                                target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Face detection</h2>
+                            </a>
+                            <i>Detecting frontal face of humans</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <time>August 2019</time>
+                            <a id="title" href="sentiment_analysis.html"
+                                target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Sentiment Analysis</h2>
+                            </a>
+                            <i>Application of Text Classification</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <time>August 2019</time>
+                            <a id="title" href="text_classification.html"
+                                target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Text Classification</h2>
+                            </a>
+                            <i>Classifying labelled text</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <time>June 2019</time>
+                            <a id="title" href="iris_data_classification.html"
+                                target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Iris Data Classification</h2>
+                            </a>
+                            <i>First project with Machine Learning</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <ul class="time">
+                                <li>November 2018</li>
+                                <li>- May 2019</li>
+                            </ul>
+                            <h2>Python and Machine Learning</h2>
+                            <i>Supervised and Unsupervised Learning</i>
+                            <p></p>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <ul class="time">
+                                <li>March 2018</li>
+                                <li>- May 2018</li>
+                            </ul>
+                            <h2>Statistics</h2>
+                            <i>Descriptive and Inferential Statistics</i>
+                            <p></p>
+
+
+
+                        </li>
+                        <li id="work" class="timeline-items">
+                            <ul class="time">
+                                <li>May 2012</li>
+                                <li>- Feb 2018</li>
+                            </ul>
+                            <a id="title" href="accenture.html" target="_self"
+                                rel="noopener nofollow noreferrer">
+                                <h2>Accenture Pvt Ltd</h2>
+                            </a>
+                            <p>SAP Resource as Associate Software Engineer</p>
+                            <i></i>
+
+
+                        </li>
+                        <li id="study" class="timeline-items">
+                            <time>2012-2016</time>
+                            <h2>KIIT University, Bhubaneswar</h2>
+                            <p>Engineering in Electronics and Telecommunication
+                            </p>
+                            <i></i>
+                        </li>
+
+
+                        <li class="timeline-items">
+                            <time>till 2012</time>
+                            <h2>Apeejay School, Nerul</h2>
+                            <p></p>
+                            <i></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="resume f-item">
+                    <a id="resume" href="images/catscorecard.pdf"
+                        target="_blank" type="application/octet-stream"
+                        download="sephalisahooresume.pdf"
+                        rel="noopener nofollow noreferrer">Download Resume</a>
+                </div>
+                <div class="contact f-item">
+                    <ul id="contactme" class="icon-list">
+                        <a href="https://github.com/seph392" target="_blank"
+                            rel="noopener noreferrer  nofollow">
+                            <li class="icon-items"><i class="fa fa-github"
+                                    aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/public-profile/in/sephalisahoo/"
+                            target="_blank" rel="noopener noreferrer  nofollow">
+                            <li class="icon-items"><i class="fa fa-linkedin"
+                                    aria-hidden="true"> </i></li>
+                        </a>
+                        <!--<a href="#gmail" rel="noopener noreferrer  nofollow">
+                            <li class="icon-items"><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                        </a>-->
+                    </ul>
+                </div>
+                <div class="copyright">
+                    Copyright © 2020 Sephali Sahoo
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
