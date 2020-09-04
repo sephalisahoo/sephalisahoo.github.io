@@ -88,15 +88,15 @@
             list-style-position: inside;
             padding-left: 0;
         }
-
+              
         table {
-            width: 100%;
-            text-align: center;
-        }
-
+                width: 100%;
+                text-align: center;
+            }
+            
         #image {
-            max-width: 100%;
-        }
+                max-width: 100%;
+            }
 
         @media screen and (min-width: 1100px) {
 
@@ -181,115 +181,70 @@
         </div>
         <div class="content-container">
             <div class="title">
-                Questionary
+                Text classification
                 <hr />
             </div>
             <ul>
-                <li>Python version: 3.6.8</li>
-                <li>Dlib version: 19.8.1</li>
+                <li>The idea is understand the difference between Multinomial
+                    Naive Bayes(MNB) and Complement Naive
+                    Bayes(CNB), and
+                    the role of alpha as a parameter.</li>
+                <li>(Note: Alpha is added as smoothing parameter(0 for no
+                    smoothing). The default value of alpha is 1.)
+                </li>
+                <li>I tested and compared four models: MNB(), MNB(alpha =
+                    1.0e-10), CNB(), CNB(alpha = 1.0e-10), on a
+                    self-created
+                    small dataset with skewed data.</li>
+
+                <br>
+
+                <li><b>Highlights</b></li>
+                <li>CNB works with the idea of finding probability of not
+                    belonging to a class/label, whereas MNB finds
+                    the
+                    probability of presence of class/label.</li>
+                <li>It was noted that MNB() is biased due to the skewness of the
+                    data, same can be observed with
+                    CNB(alpha =
+                    1.0e-10).</li>
+
+                <br>
+
+                <li><b>Sample of Biased MNB() and CNB(alpha = 1.0e-10):-</b>
+                </li>
+                <li>It can be noted the text <b>sun</b> is not in the dataset,
+                    implying the count per each label(object
+                    or
+                    action) is zero. Therefore it can be presence is either of
+                    the class with 50-50 possibility, but for
+                    MNB() and
+                    CNB(alpha = 1.0e-10) show that it is 90% likely to be
+                    present in class <b>object</b>, which forms
+                    180 out 200
+                    datapoints.</li>
+                <li>MNB(alpha = 1.0e-10) and CNB() performs most accurately. I
+                    found CNB() a more balanced algorithm.
+                </li>
+                <li>
+                    <br><img id='image' src=result/mnb_cnb.jpg>
+                </li>
                 <br>
                 <li>
-                    This project has two parts:-
-                    <ol>
-                        <li>creating a database</li>
-                        <li>creating question with appropriate options, and a
-                            single correct answer</li>
-                        <li>populating the question, options into GUI, and
-                            providing messages on selection of an option.
-                        </li>
-                    </ol>
-                </li>
-                <br>
-                <br>
-                <li>
-                    <b>Part 1</b>
-                </li>
-                <li>
-                    A list of player with details is required, with name of the
-                    players under the column 'Player'.
-                </li>
-                <li>
-                    The file format must be in .csv
-                </li>
-                <li>
-                    (Note: Downloading is done using bing_image_download.py)
-                </li>
-                <li>
-                    Using the list of names from the column 'Player'. Images of
-                    the players are downloaded.(Note: one
-                    can set the
-                    'Usage Rights' for the images to be downloaded.)
-                </li>
-                <br>
-                <li>
-                    There are two image repository that is created:
-                    <ol>
-                        <li>with only the faces of players, which is pickled
-                        </li>
-                        <li>with players(not specified for face images)</li>
-                    </ol>
-                </li>
-                <br>
-                <li>
-                    All the images in the <b> second repository </b> are
-                    screened for the presence of a single player
-                    and then
-                    screened to recognise the faces using the respective pickle
-                    file.
-                </li>
-                <br>
-                <br>
-                <li>
-                    <b>Part 2</b>
-                </li>
-                <li>
-                    Questions are generated using question.csv(.csv file format
-                    is mandatory). The question.csv has
-                    mandatory
-                    columns: <b>question, tag, not_flag</b>. Using the
-                    combination, questions are generated.
-                </li>
-                <li>
-                    Using <b> tag </b>, appropriate columns are populated, and
-                    corresponding image for each option is
-                    selected.(Note: Only one option is a correct answer.)
-                </li>
-                <br>
-                <br>
-                <li>
-                    <b>Part 3</b>
-                </li>
-                <li>
-                    Using tkinter, quesion and the corresponding options are
-                    populated on the screen. On selection of an
-                    option, a pop-up box with message appears.
-                </li>
-                <br>
-                <br>
-                <li>
-                    <b>Using 2019 Ipl data, for sample:-</b>
-                </li>
-                <li>
-                    <b>Questionary Screen with questions and options</b>
-                </li>
-                <li>
-                    <br><img id='image' src='result/questionscreen.jpg'>
-                </li>
-                <br>
-                <br>
-                <li>
-                    <b>Message box on Selecting Wrong Option</b>
-                </li>
-                <li>
-                    <br><img id='image' src='result/popup.jpg'>
+                    The application of Text Classification is
+                    <b>
+                        <a id="title" href="sentiment_analysis.html"
+                            target="_self" rel="noopener nofollow noreferrer">
+                            Sentiment Analysis.</a>
+                    </b>
                 </li>
                 <br>
                 <br>
                 <li>
                     <i><b>Link to Github: </b></i>
-                    <a href="https://github.com/seph392/Questionary"
+                    <a href="https://github.com/seph392/Text_classification"
                         target="_blank" rel="noopener noreferrer  nofollow">
-                        <i>Questionary</i>
+                        <i>Text_classification</i>
                     </a>
                 </li>
             </ul>

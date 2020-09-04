@@ -90,13 +90,12 @@
         }
 
         table {
-            width: 80%;
+            width: 100%;
             text-align: center;
         }
 
-        #india_table {
-            width: 80%;
-            text-align: right;
+        #image {
+            width: 100%;
         }
 
         @media screen and (min-width: 1100px) {
@@ -126,6 +125,24 @@
                 transition: none;
                 opacity: 1;
                 width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 770px){
+            html,
+            body {
+                overflow-x: hidden;
+                width: 100%;
+            }
+            .main-container {
+                margin: 20px 0px;
+                padding: 0px;
+                transition: none;
+                opacity: 1;
+                width: 100%;
+            }
+            .content-container{
+                padding: 50px 25px;
             }
         }
     </style>
@@ -199,13 +216,13 @@
             </ol>
             <ul>
                 <li>
-                    <br><img src='result/covid19_confirmed_map.JPG'>
+                    <br><img id='image' src='result/covid19_confirmed_map.JPG'>
                 </li>
                 <li>
-                    <br><img src='result/covid19_death_map.JPG'>
+                    <br><img id='image' src='result/covid19_death_map.JPG'>
                 </li>
                 <li>
-                    <br><img src='result/covid19_fatality_map.JPG'>
+                    <br><img id='image' src='result/covid19_fatality_map.JPG'>
                 </li>
             </ul>
             <br>
@@ -235,64 +252,64 @@
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_jan.JPG'></td>
-                    <td><img src='result/top10_jan.JPG'></td>
+                    <td><img id='image' src='result/map_jan.JPG'></td>
+                    <td><img id='image' src='result/top10_jan.JPG'></td>
                 </tr>
                 <tr>
                     <th>February</th>
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_feb.JPG'></td>
-                    <td><img src='result/top10_feb.JPG'></td>
+                    <td><img id='image' src='result/map_feb.JPG'></td>
+                    <td><img id='image' src='result/top10_feb.JPG'></td>
                 </tr>
                 <tr>
                     <th>March</th>
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_march.JPG'></td>
-                    <td><img src='result/top10_march.JPG'></td>
+                    <td><img id='image' src='result/map_march.JPG'></td>
+                    <td><img id='image' src='result/top10_march.JPG'></td>
                 </tr>
                 <tr>
                     <th>April</th>
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_april.JPG'></td>
-                    <td><img src='result/top10_april.JPG'></td>
+                    <td><img id='image' src='result/map_april.JPG'></td>
+                    <td><img id='image' src='result/top10_april.JPG'></td>
                 </tr>
                 <tr>
                     <th>May</th>
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_may.JPG'></td>
-                    <td><img src='result/top10_may.JPG'></td>
+                    <td><img id='image' src='result/map_may.JPG'></td>
+                    <td><img id='image' src='result/top10_may.JPG'></td>
                 </tr>
                 <tr>
                     <th>June</th>
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_june.JPG'></td>
-                    <td><img src='result/top10_june.JPG'></td>
+                    <td><img id='image' src='result/map_june.JPG'></td>
+                    <td><img id='image' src='result/top10_june.JPG'></td>
                 </tr>
                 <tr>
                     <th>July</th>
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_july.JPG'></td>
-                    <td><img src='result/top10_july.JPG'></td>
+                    <td><img id='image' src='result/map_july.JPG'></td>
+                    <td><img id='image' src='result/top10_july.JPG'></td>
                 </tr>
                 <tr>
                     <th>August</th>
                     <th>Top-10</th>
                 </tr>
                 <tr>
-                    <td><img src='result/map_august.JPG'></td>
-                    <td><img src='result/top10_august.JPG'></td>
+                    <td><img id='image' src='result/map_august.JPG'></td>
+                    <td><img id='image' src='result/top10_august.JPG'></td>
                 </tr>
             </table>
             <br>
@@ -304,7 +321,7 @@
                     China.
                 </li>
                 <li>
-                    <br><img src='result/graph_count.JPG'>
+                    <br><img id='image' src='result/graph_count.JPG'>
                 </li>
                 <li>
                     <b>Note: </b>In the above graph, the orange color is
@@ -336,8 +353,8 @@
                 <li>
                     <table>
                         <tr>
-                            <td><img src='result/death_map.JPG'></td>
-                            <td><img src='result/top10_death.JPG'></td>
+                            <td><img id='image' src='result/death_map.JPG'></td>
+                            <td><img id='image' src='result/top10_death.JPG'></td>
                         </tr>
                     </table>
                 </li>
@@ -357,8 +374,8 @@
                 <li>
                     <table>
                         <tr>
-                            <td><img src='result/fatality_map.JPG'></td>
-                            <td><img src='result/top10_fatality.JPG'></td>
+                            <td><img id='image' src='result/fatality_map.JPG'></td>
+                            <td><img id='image' src='result/top10_fatality.JPG'></td>
                         </tr>
                     </table>
                 </li>
@@ -373,7 +390,7 @@
                 </li>
                 <br>
                 <li>
-                    <img src='result/graph_fatality.JPG'>
+                    <img id='image' src='result/graph_fatality.JPG'>
                 </li>
                 <br>
                 <li>
@@ -385,43 +402,43 @@
                     <b>INDIA</b>
                 </li>
                 <br>
-                <table id="india_table">
+                <table>
                     <tr>
-                        <td><img src='result/graphs_india.JPG'></td>
-                        <td>
-                            <li>
-                                The ‘Total Number of Cases’ graph shows an
-                                exponential increase in the count, which can
-                                be explained by the linear increase in the
-                                ‘New Positive/Death Cases per Day’ graph.
-                            </li>
-                            <br>
-                            <li>
-                                Confirmed case of Covid-19 in India was first
-                                reported on February 1, 2020. The
-                                major outbreak was reported on April 2,2020 with
-                                568 cases, and it has been
-                                rising since then.
-                            </li>
-                            <br>
-                            <li>
-                                The first death due to the pandemic in India was
-                                on March 13,2020, and increased
-                                to 64,469 cases as of August 31, 2020. The
-                                Fatality rate peaked at 3.43% on May
-                                6,2020 and then decreased to 1.78%.
-                            </li>
-                            <br>
-                            <li>
-                                It can also be noted one hovering over the
-                                country that the reported cases of
-                                3,621,245 constitutes 14.26% of the world count,
-                                whereas 64,469 death cases
-                                constitute 7.52% of the total deaths.
-                            </li>
-                        </td>
+                        <td><img id='image' src='result/graphs_india1.JPG'></td>
+                        <td><img id='image' src='result/graphs_india2.JPG'></td>
                     </tr>
                 </table>
+                <br>
+                <li>
+                    The ‘Total Number of Cases’ graph shows an
+                    exponential increase in the count, which can
+                    be explained by the linear increase in the
+                    ‘New Positive/Death Cases per Day’ graph.
+                </li>
+                <br>
+                <li>
+                    Confirmed case of Covid-19 in India was first
+                    reported on February 1, 2020. The
+                    major outbreak was reported on April 2,2020 with
+                    568 cases, and it has been
+                    rising since then.
+                </li>
+                <br>
+                <li>
+                    The first death due to the pandemic in India was
+                    on March 13,2020, and increased
+                    to 64,469 cases as of August 31, 2020. The
+                    Fatality rate peaked at 3.43% on May
+                    6,2020 and then decreased to 1.78%.
+                </li>
+                <br>
+                <li>
+                    It can also be noted one hovering over the
+                    country that the reported cases of
+                    3,621,245 constitutes 14.26% of the world count,
+                    whereas 64,469 death cases
+                    constitute 7.52% of the total deaths.
+                </li>
                 <br>
                 <br>
                 <li>
